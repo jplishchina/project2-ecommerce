@@ -1,0 +1,28 @@
+.hero{
+    background-image:url('/img/jumbotronpic.jpg');
+    background-size:cover;
+    
+}
+
+body{
+    background-color:rgb(32, 32, 32);
+}
+
+.current{
+    font-family: 'Poppins', sans-serif;
+}
+
+.priceslash{
+    text-decoration:line-through;
+}
+
+.cart{
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+}
+
+span.price {
+    float: right;
+    color: grey;
+  }
