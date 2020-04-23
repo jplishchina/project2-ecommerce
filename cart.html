@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/cart.css">
+    <script src="https://kit.fontawesome.com/a83b4b4734.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <title>Project 2</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="/home.html"><i class="fas fa-camera-retro ml-3"></i> PhotoPro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link ml-4 mr-4" href="/home.html"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-4" href="/catalog.html"><i class="fas fa-store"></i> Our Catalog</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link mr-4" href="/cart.html"><i class="fas fa-shopping-cart"></i> Your Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-4" href="/about.html"> About/Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-4" href="#"><i class="far fa-user"></i> Login</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 mr-5">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button onclick="window.location.href = '/catalog.html'" class="btn btn-secondary my-2 my-sm-0" type="button">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <div class="container">
+        <div class="jumbotron hero text-center rounded-0 mb-3">
+            <h1 class="py-2 px-2 d-inline font-weight-bold text-light text-center display-2">Your Cart</h1>
+            <p class="lead mt-5 ">  
+              <button onclick="window.location.href = '/catalog.html'" class= "btn btn-success mt-1 mx-3.5 btn-outline-light" type="button">Keep Shopping</button>
+            </p>
+        </div>
+    </div>
+    <div class="promo alert-info text-center mx-5 rounded d-flex justify-content-center pt-3 mb-5">
+      <p>Order today to recieve Free Express Shipping + 15% off your order with promotional code <u><em>'SPRINGSHOTS'</em></u> at checkout</p>
+    </div>
+        <div class="cart container bg-light justify-content-center p-3 mb-5">
+            <h4>Your Cart <span class="price" ><i class="fa fa-shopping-cart text-success"></i> <b>5 Items:</b></span></h4>
+            <p>Review your items by pressing the <i class="fas fa-info-circle"></i> icon next to each item.</p>
+            <p><button type="button" class="canon btn btn-light p-1" data-toggle="modal" data-target="#cammodal">
+                <i class="fas fa-info-circle"></i></button> Canon EOS Rebel T7<span class="price">$379.99 <button type="button" class="btn btn-secondary p-1"><i class="fas fa-trash-alt text-danger p-0"></i></button></span></p>
+            <p><button type="button" class="canon btn btn-light p-1" data-toggle="modal" data-target="#lensmodal">
+                <i class="fas fa-info-circle"></i></button> Sigma 18-35mm Canon Lens<span class="price">$649.99 <button type="button" class="btn btn-secondary p-1"><i class="fas fa-trash-alt text-danger p-0"></i></button></span></p>
+            <p><button type="button" class="canon btn btn-light p-1" data-toggle="modal" data-target="#trimodal">
+                <i class="fas fa-info-circle"></i></button> Magnus TR-13 Tripod<span class="price">$69.00 <button type="button" class="btn btn-secondary p-1"><i class="fas fa-trash-alt text-danger p-0"></i></button></span></p>
+            <p><button type="button" class="canon btn btn-light p-1" data-toggle="modal" data-target="#cardmodal">
+                <i class="fas fa-info-circle"></i></button> SanDisk 1TB SD Card<span class="price">$339.99 <button type="button" class="btn btn-secondary p-1"><i class="fas fa-trash-alt text-danger p-0"></i></button></span></p>
+            <p><button type="button" class="canon btn btn-light p-1" data-toggle="modal" data-target="#bagmodal">
+                <i class="fas fa-info-circle"></i></button> Canon 200DG Deluxe Gadget Bag<span class="price">$39.99 <button type="button" class="btn btn-secondary p-1"><i class="fas fa-trash-alt text-danger p-0"></i></button></span></p>
+            
+            <hr>
+            <p>SUBTOTAL: <span class="price"><b>$1,478.96</b></span></p>
+            <p>TAX: <span class="price"><b>$129.41</b></span></p>
+            <p>SHIPPING (Standard USPS Priority Mail): <span class="price"><b>$0.00</b></span></p>
+            <hr>
+            <p>TOTAL: <span class="price"><b>$1,608.37</b></span></p>
+            <p class="text-center mt-4">
+            <button onclick="window.location.href = '/catalog.html'" class= "btn btn-info mt-1 mx-3.5 btn-outline-light" type="button">Keep Shopping</button>
+            <button onclick="window.location.href = '/checkout.html'" class= "btn btn-success mt-1 mx-3.5 btn-outline-light" type="button">Proceed to Checkout</button>
+          </p>
+        </div>
+        
+      
+      <div class="modal fade" id="cammodal" tabindex="-1" role="dialog" aria-labelledby="cammodal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cammodal1"> Canon EOS Rebel T7 - $379.99</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center"><img class="img-responsive" style="margin:0 auto;" src="/img/rsz_canont7.jpg" alt=""></p>
+                <ul class="t7specs text-dark">
+                    <li>Sensor: 24.1MP APS-C CMOS</li>
+                    <li>Lens mount: Canon EF-S</li>
+                    <li>Screen: 3.0-inch, 920,000 dots</li>
+                    <li>Burst shooting: 3fps</li>
+                    <li>Autofocus: 9-point AF</li>
+                    <li>Video: Full HD 1080p</li>
+                    <li>Connectivity: Wi-Fi and NFC</li>
+                    <li>Battery life: 500 shots</li>
+                    <li>Weight: 475g</li>
+                  </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="trimodal" tabindex="-1" role="dialog" aria-labelledby="trimodal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="trimodal1">Magnus TR-13 Travel Tripod with Dual-Action Ball Head - $69.00</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center"><img class="img-responsive" style="margin:0 auto;" src="/img/rsz_magnus.jpg" alt=""></p>
+                <ul class="t7specs text-dark">
+                    <li>Load Capacity: 13.2 lb</li>
+                    <li>Max Height: 62.5 in</li>
+                    <li>Folded Length: 18.2 in </li>
+                    <li>Dual-action ballhead</li>
+                    <li>Telescoping legs with fliplocks</li>
+                    <li>Reverse-folding legs for travel</li>
+                    <li>Arca-type compatible</li>
+                    <li>Materials: Aluminum and Plastic</li>
+                    <li>Compatible with DSLR and Mirrorless Cameras</li>
+                  </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="cardmodal" tabindex="-1" role="dialog" aria-labelledby="cardmodal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cardmodal1">SanDisk 1TB Extreme PRO UHS-I SDXC Memory Card - $339.99</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center"><img class="img-responsive" style="margin:0 auto;" src="/img/rsz_sandisk.jpg" alt=""></p>
+                <ul class="t7specs text-dark">
+                    <li>1TB Storage Capacity</li>
+                    <li>Max Read Speed: 170 MB/s</li>
+                    <li>UHS-I / V30 / U3 / Class 10</li>
+                    <li>Max Write Speed: 90 MB/s</li>
+                    <li>Shockproof, Temperature Extremes, Waterproof, X-Ray Proof</li>
+                  </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="lensmodal" tabindex="-1" role="dialog" aria-labelledby="lensmodal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="lensmodal1">Sigma 18-35mm f/1.8 DC HSM Art Lens for Canon EF - $649.99</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center"><img class="img-responsive" style="margin:0 auto;" src="/img/rsz_canlens.jpg" alt=""></p>
+                <ul class="t7specs text-dark">
+                  <li>18-35mm focal length (approx 28-50mm equivalent)</li>
+                  <li>Extremely fast F1.8 maximum aperture</li>
+                  <li>Minimum aperture of F16</li>
+                  <li>Ring-type ultrasonic focus motor with full-time manual override</li>
+                  <li>Compatible with: Canon EOS DSLR Camera Models</li>
+                  <li>Weight: 810g</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="bagmodal" tabindex="-1" role="dialog" aria-labelledby="bagmodal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="bagmodal1">Canon 200DG Deluxe Gadget Bag - $39.99</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center"><img class="img-responsive" style="margin:0 auto;" src="/img/rsz_canonbag.jpg" alt=""></p>
+                <ul class="t7specs text-dark">
+                    <li>Water-resistant Nylon</li>
+                    <li>Two Zippered Side Pockets</li>
+                    <li>Padded Interior</li>
+                    <li>The Canon 200DG Deluxe Gadget Bag (Black with Gray Band) is a Cordura nylon bag designed to carry 
+                        and protect most Canon SLR camera kits. The bag can hold 1-2 SLR camera bodies with 2-3 lenses, flash 
+                        and accessories. It has 2 zippered side pockets for flash or accessories and tripod loops on the bottom 
+                        of the bag. The bag is carried by a carry handle or a removable, adjustable shoulder strap.</li>
+                  </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+<footer>
+    <div class="text-center bg-dark text-white py-3">
+      <button class="btn btn-primary p-1 text-white"><i class="fab fa-instagram mx-2 mb-2"></i></button>
+      <button class="btn btn-primary p-1 text-white"><i class="fab fa-facebook-square mx-2 mb-2"></i></button>
+      <button class="btn btn-primary p-1 text-white"><i class="fab fa-twitter-square mx-2 mb-2"></i></button>
+        <h6 class="font-weight-bold text-white pt-2">Copyright PhotoPro 2020</h6>
+    </div>
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
