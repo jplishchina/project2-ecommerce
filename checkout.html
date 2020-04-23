@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/checkout.css">
+    <script src="https://kit.fontawesome.com/a83b4b4734.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+    <title>Project 2</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="/home.html"><i class="fas fa-camera-retro ml-3"></i> PhotoPro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link ml-4 mr-4" href="/home.html"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-4" href="/catalog.html"><i class="fas fa-store"></i> Our Catalog</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link mr-4" href="/cart.html"><i class="fas fa-shopping-cart"></i> Your Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-4" href="/about.html"> About/Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-4" href="#"><i class="far fa-user"></i> Login</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 mr-5">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button onclick="window.location.href = '/catalog.html'" class="btn btn-secondary my-2 my-sm-0" type="button">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <div class="container">
+        <div class="jumbotron hero text-center rounded-0 mb-3">
+            <h1 class="py-2 px-2 d-inline font-weight-bold text-light text-center display-2">Check Out</h1>
+            
+        </div>
+    </div>
+    <div class="promo alert-info text-center mx-5 rounded d-flex justify-content-center pt-3 mb-5">
+      <p>Order today to recieve Free Express Shipping + 15% off your order with promotional code <u><em>'SPRINGSHOTS'</em></u> at checkout</p>
+    </div>
+        <div class="cart container bg-light justify-content-center p-3 mb-5">
+            <h4>Your Cart <span class="price" ><i class="fa fa-shopping-cart text-success"></i> <b>5 Items:</b></span></h4><hr><br>
+            <p>Canon EOS Rebel T7<span class="price">$379.99</span></p>
+            <p>Sigma 18-35mm Canon Lens<span class="price">$649.99</span></p>
+            <p>Magnus TR-13 Tripod<span class="price">$69.00</span></p>
+            <p>SanDisk 1TB SD Card<span class="price">$339.99</span></p>
+            <p>Canon 200DG Deluxe Gadget Bag<span class="price">$39.99</span></p>
+            
+            <hr>
+            <p>SUBTOTAL: <span class="price"><b>$1,478.96</b></span></p>
+            <p>TAX: <span class="price"><b>$129.41</b></span></p>
+            <p>SHIPPING: <span class="price"><b>$0.00</b></span></p>
+            <p>PROMO: <span class="price"><b>- $241.26</b></span></p>
+            <hr>
+            <p>TOTAL: <span class="price"><b>$1,367.11</b></span></p>
+            <hr>
+            <h3><u>Shipping:</u></h3>
+            <form>
+                <div class="form-group">
+                <div class="custom-control custom-radio">
+                 <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio1">USPS Priority Mail (3-8 Days) (+$0.00)</label>
+            </div><br>
+             <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" checked="">
+             <label class="custom-control-label" for="customRadio2">USPS Express Mail (1-2 Days) (+$22.50)</label>
+            </div>
+            </div>
+            </form><br><br>
+            <form>
+                <p>As of March 31st, 15% of our profits are being used to support local NYC <br>hospitals in acquiring PPE and medical equipment during the COVID-19 epidemic.<br> Would you like to donate to support the cause?</p>
+                <div class="row col-50">
+                <div class="form-group ">
+                    <label class="control-label">(Optional) Donation:</label>
+                    <div class="form-group">
+                      <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">$</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <div class="input-group-append">
+                          <span class="input-group-text">.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div></div>
+            </form>
+
+            <div class="row">
+                <div class="col-75">
+                  <div class="container">
+                    <form>
+              
+                      <div class="row">
+                        <div class="col-50">
+                          <h3>Billing/Shipping Information</h3><br>
+                          <label>
+                            <input type="checkbox" name="sameaddress"> Shipping Address same as Billing
+                          </label><br><br>
+                          <label for="fullname">Full Name</label>
+                          <input class="form-control" required type="text" id="fullname" name="fullname" placeholder="Full Name">
+                          <br><label for="email">Email</label>
+                          <input class="form-control" required type="text" id="email" name="email" placeholder="johndoe@example.com">
+                          <br><label for="address">Street Address</label>
+                          <input class="form-control" required type="text" id="address" name="address" placeholder="Street Address">
+                          <br><label for="city">City</label>
+                          <input class="form-control" required type="text" id="city" name="city" placeholder="City">
+                            <br>
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="state">State</label>
+                              <input class="form-control" type="text" id="state" name="state" placeholder="State">
+                            </div><br><br>
+                            <div class="col-50">
+                              <label for="zip">Zipcode</label>
+                              <input class="form-control" type="text" id="zip" name="zip" placeholder="Zip Code">
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-50">
+                          <h3>Payment</h3>
+                          <label>Payment methods we accept:</label>
+                          <div class="icon-container">
+                           <i class="fa fa-cc-discover text-warning"></i>
+                            <i class="fa fa-cc-mastercard text-danger"></i>
+                             <i class="fa fa-cc-visa text-success"></i>
+                            <i class="fa fa-cc-amex text-info"></i>
+                            
+                            <a class="btn btn-light p-1 rounded ml-3 mr-3" href="#">
+                                    <i class="fab fa-apple-pay icon-large paypal"></i></a>
+                            <a class="btn btn-info p-0 rounded" href="#">
+                                <i class="fab fa-cc-paypal text-light icon-large m-2 paypal"></i></a>
+                                <a class="btn btn-primary p-1 mx-3 pb-3 rounded" href="#">
+                                    <i class="paypal"></i>Store Credit</a>
+                            <div class="form-group has-success mt-2 mb-1">
+                            <label class="form-control-label" for="inputValid">Promotional Code</label>
+                             <input type="text" value="SPRINGSHOTS" class="form-control is-valid" id="inputValid">
+                            <div class="valid-feedback">Promo code accepted!</div>
+                            </div>   
+                          </div>
+                          <label for="cardname">Name on Card</label>
+                          <input class="form-control" required type="text" id="cardname" name="cardname" placeholder="Name Credit Card">
+                          <br><label for="ccnum">Credit card number</label>
+                          <input class="form-control" required type="text" id="ccnum" name="cardnumber" placeholder="Credit Card Number">
+                          <br><div class="form-group">
+                            <label for="expmonth">Exp Month</label>
+                            <select required class="form-control" id="expmonth">
+                              <option value="">00 - Please Select a Month</option>  
+                              <option value="01">01 - January</option>
+                              <option value="02">02 - February</option>
+                              <option value="03">03 - March</option>
+                              <option value="04">04 - April</option>
+                              <option value="05">05 - May</option>
+                              <option value="06">06 - June</option>
+                              <option value="07">07 - July</option>
+                              <option value="08">08 - August</option>
+                              <option value="09">09 - September</option>
+                              <option value="10">10 - October</option>
+                              <option value="11">11 - November</option>
+                              <option value="12">12 - December</option>
+                            </select>
+                          </div>
+              
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="expyear">Exp Year</label>
+                              <input class="form-control" required type="text" id="expyear" name="expyear">
+                            </div>
+                            <div class="col-50">
+                              <label for="cvv">Security Code <i class="fas fa-info-circle"></i></label>
+                              <input class="form-control" required type="text" id="cvv" name="cvv">
+                            </div>
+                          </div>
+                        </div>
+                        
+              
+                      </div>
+                        <br><br>
+                      <p class="text-center"> Once your order is submitted, you will recieve an email with your order number and order details. Thank you for shopping with PhotoPro!</p>
+                      <p class="text-center mt-3">
+                      <input type="submit" value="Submit Order" class="btn btn-success"></p>
+                      
+                    </form>
+                  </div>
+                </div>     
+        </div>
+        </div>
+      
+<footer>
+    <div class="text-center bg-dark text-white py-3">
+      <button class="btn btn-primary p-1 text-white"><i class="fab fa-instagram mx-2 mb-2"></i></button>
+      <button class="btn btn-primary p-1 text-white"><i class="fab fa-facebook-square mx-2 mb-2"></i></button>
+      <button class="btn btn-primary p-1 text-white"><i class="fab fa-twitter-square mx-2 mb-2"></i></button>
+        <h6 class="font-weight-bold text-white pt-2">Copyright PhotoPro 2020</h6>
+    </div>
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
